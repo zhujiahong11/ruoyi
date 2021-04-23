@@ -34,6 +34,7 @@ public class getPersonnels {
         String body = response.getBody();
         String accessToken = JSON.parseObject(body).get("access_token").toString();
         //部门信息
+
         queryPersonnel(accessToken,1L);
         return accessToken;
     }
